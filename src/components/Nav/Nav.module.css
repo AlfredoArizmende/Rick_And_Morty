@@ -1,0 +1,40 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+    margin-bottom: 3em;
+    border-radius: 5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    margin-right: 3em;
+    position: relative;
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 1.3em;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.menu:hover {
+    color: white;
+}
+
+.menu:after {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 7, 110);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: .3s;
+}
+
+.menu:hover:after {
+    width: 100%;
+}
